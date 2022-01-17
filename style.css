@@ -1,0 +1,81 @@
+body {
+    background-color: white;
+    height: fit-content;
+  }
+  header {
+    background-color: rgb(0, 255, 255);
+    padding: 10%;
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+  }
+  section {
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: black;
+    padding: 5%;
+  }
+  .inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+  }
+  .container {
+    height: auto;
+    color: white;
+    align-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10pt;
+  }
+  .top-bar {
+    background-color: cadetblue;
+    height: 20px;
+    width: 150px;
+    margin: auto;
+  }
+  .red {
+    background-color: red;
+  }
+  .pink {
+    background-color: pink;
+  }
+  .green {
+    background-color: green;
+  }
+  .inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+  }
+  h2 {
+    color: blue;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  
+  /* Declare base style.  Here, this is mobile view bc the way you wrote the later media queries */
+  .grid-container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+  }
+  
+  /* Everything bigger than 576... 2 columns */
+  @media (min-width: 576px) {
+    .grid-container {
+      grid-template-columns: 1fr 1fr;
+    }
+     
+  }
+  
+  /* If bigger than 992px..... 3 columns */
+  @media (min-width: 992px) {
+    .grid-container {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
